@@ -28,8 +28,32 @@ struct ContentView: View {
                     .font(.system(size: 40, weight: .bold, design: .monospaced))
                     .offset(x: -100, y: -100)
                 
-                TextField("Enter Email" , text: $email)
+                TextField("Email" , text: $email)
+                    .foregroundColor(.white)
+                    .textFieldStyle(.plain)
+                    .placeholder(when: email.isEmpty) {
+                        Text("Email")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                Rectangle()
+                    .frame(width: 350, height: 1)
+                    .foregroundColor(.white)
+                
+                SecureField("Password", text: $password)
+                    .foregroundColor(.white)
+                    .textFieldStyle(.plain)
+                    .placeholder(when: password.isEmpty) {
+                        Text("Password")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                
+                Rectangle()
+                    .frame(width: 350, height: 1)
+                    .foregroundColor(.white)
             }
+            .frame(width: 350)
             
         }.ignoresSafeArea()
     }
