@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				744B88592B6D421A00DFDFF8 /* FirebaseProjectApp.swift */,
-				744B885B2B6D421A00DFDFF8 /* ContentView.swift */,
+				744B88672B6D429200DFDFF8 /* Project_1 */,
 				744B885D2B6D421C00DFDFF8 /* Assets.xcassets */,
 				744B885F2B6D421C00DFDFF8 /* Preview Content */,
 			);
@@ -65,6 +65,14 @@
 				744B88602B6D421C00DFDFF8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		744B88672B6D429200DFDFF8 /* Project_1 */ = {
+			isa = PBXGroup;
+			children = (
+				744B885B2B6D421A00DFDFF8 /* ContentView.swift */,
+			);
+			path = Project_1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
