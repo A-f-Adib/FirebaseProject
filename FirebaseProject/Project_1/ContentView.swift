@@ -28,6 +28,8 @@ struct ContentView: View {
                     .font(.system(size: 40, weight: .bold, design: .monospaced))
                     .offset(x: -100, y: -100)
                 
+                
+                
                 TextField("Email" , text: $email)
                     .foregroundColor(.white)
                     .textFieldStyle(.plain)
@@ -40,6 +42,9 @@ struct ContentView: View {
                     .frame(width: 350, height: 1)
                     .foregroundColor(.white)
                 
+                
+                
+                
                 SecureField("Password", text: $password)
                     .foregroundColor(.white)
                     .textFieldStyle(.plain)
@@ -48,10 +53,25 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .bold()
                     }
-                
                 Rectangle()
                     .frame(width: 350, height: 1)
                     .foregroundColor(.white)
+                
+                
+                Button {
+                    
+                } label: {
+                    Text("Sign Up")
+                        .bold()
+                        .frame(width: 200, height: 40)
+                        
+                        .background(.linearGradient(colors: [.orange, .red], startPoint: .topLeading, endPoint: .bottomTrailing)
+                        )
+                        .cornerRadius(10)
+                        .offset(y: 80)
+                        .foregroundColor(.white)
+                    
+                }
             }
             .frame(width: 350)
             
