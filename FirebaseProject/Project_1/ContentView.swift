@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var email = ""
+    @State private var password = ""
+    
     var body: some View {
         ZStack{
             Color.black
@@ -23,6 +27,8 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .bold, design: .monospaced))
                     .offset(x: -100, y: -100)
+                
+                TextField("Enter Email" , text: $email)
             }
             
         }.ignoresSafeArea()
@@ -32,5 +38,18 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+extension View {
+    func placeholder<Content: View> (
+        when show: Bool,
+        alg: Alignment = .leading,
+        @ViewBuilder placeholder : () -> Content) -> some View {
+        
+            ZStack(alignment: alg) {
+                placeholder().opacity(show ? 1 : 0)
+              self
+        }
     }
 }
