@@ -72,6 +72,15 @@ struct ContentView: View {
                         .foregroundColor(.white)
                     
                 }
+                
+                Button{
+                    
+                } label: {
+                    Text("Alrady have an account? Login")
+                        .bold()
+                        .foregroundColor(.white)
+                        .offset(y: 80)
+                }
             }
             .frame(width: 350)
             
