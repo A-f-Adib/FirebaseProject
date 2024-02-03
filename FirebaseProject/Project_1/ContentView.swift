@@ -15,7 +15,9 @@ struct ContentView: View {
     
     
     var body: some View {
-        ZStack{
+        
+        ZStack {
+            
             Color.black
             
             RoundedRectangle(cornerRadius: 30, style: .continuous)
@@ -23,6 +25,7 @@ struct ContentView: View {
                 .frame(width: 1200, height: 500)
                 .rotationEffect(.degrees(135))
                 .offset(y: -350)
+            
             
             VStack(spacing: 20) {
                 Text("Welcome")
@@ -83,6 +86,9 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .offset(y: 80)
                 }
+                Rectangle()
+                    .frame(width: 350, height: 1)
+                    .foregroundColor(.white)
             }
             .frame(width: 350)
             
