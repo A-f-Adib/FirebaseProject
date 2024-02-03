@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct FirebaseProjectApp: App {
     var body: some Scene {
