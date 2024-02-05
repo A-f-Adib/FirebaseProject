@@ -26,10 +26,16 @@ struct ContentView: View {
                     .frame(height: 200)
                 .foregroundColor(.yellow)
                 
-                Text("Hello World")
-                    .fontWeight(.bold)
-                    .font(.title)
+                HStack {
+                    Text("FireBase")
+                        .fontWeight(.bold)
+                        .font(.title)
                     .foregroundColor(.blue)
+                    Image(systemName: "flame.fill")
+                        .font(.title)
+                        
+                        .foregroundColor(.red)
+                }
             }
             
         }.ignoresSafeArea()
