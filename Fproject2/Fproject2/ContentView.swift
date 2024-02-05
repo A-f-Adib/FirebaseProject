@@ -10,14 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            Color.black
+            Color.red
             
             RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .foregroundStyle(.linearGradient(colors: [.orange, .red], startPoint: .topLeading, endPoint: .bottomTrailing))
-                .frame(width: 1200, height: 500)
-                .rotationEffect(.degrees(135))
-                .offset(y: -350)
-        }
+                .foregroundStyle(.linearGradient(colors: [.white, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .frame(width: 1400, height: 500)
+                .rotationEffect(.degrees(50))
+                .offset(x: -350)
+        }.ignoresSafeArea()
     }
 }
 
