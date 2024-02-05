@@ -25,6 +25,11 @@ struct ContentView: View {
                 Circle()
                     .frame(height: 200)
                 .foregroundColor(.yellow)
+                
+                Text("Hello World")
+                    .fontWeight(.bold)
+                    .font(.title)
+                    .foregroundColor(.blue)
             }
             
         }.ignoresSafeArea()
