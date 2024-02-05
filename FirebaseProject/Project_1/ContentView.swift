@@ -86,9 +86,7 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .offset(y: 80)
                 }
-                Rectangle()
-                    .frame(width: 350, height: 1)
-                    .foregroundColor(.white)
+               
             }
             .frame(width: 350)
             
