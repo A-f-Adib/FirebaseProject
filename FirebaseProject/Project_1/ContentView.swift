@@ -19,6 +19,15 @@ struct ContentView: View {
     
     var body: some View {
         
+        if userIsLoggedIn{
+            
+        } else {
+            content
+        }
+       
+    }
+    
+    var content: some View {
         ZStack {
             
             Color.black
