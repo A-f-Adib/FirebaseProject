@@ -14,6 +14,8 @@ struct ContentView: View {
     
     @State private var password = ""
     
+    @State private var userIsLoggedIn = false
+    
     
     var body: some View {
         
@@ -90,6 +92,13 @@ struct ContentView: View {
                
             }
             .frame(width: 350)
+            .onAppear {
+                Auth.auth().addStateDidChangeListener { auth, user in
+                    if user != nil {
+                        userIsLoggedIn.toggle()
+                    }
+                }
+            }
             
         }.ignoresSafeArea()
     }
