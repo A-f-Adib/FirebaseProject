@@ -80,7 +80,7 @@ struct ContentView: View {
                 }
                 
                 Button{
-                    
+                    login()
                 } label: {
                     Text("Alrady have an account? Login")
                         .bold()
@@ -96,6 +96,14 @@ struct ContentView: View {
     
     func register() {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+        }
+    }
+    
+    func login(){
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
                 print(error!.localizedDescription)
             }
