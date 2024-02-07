@@ -40,10 +40,10 @@ struct ContentView: View {
             
             
             VStack(spacing: 20) {
-                Text("Welcome")
+                Text("Welcome to")
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .bold, design: .monospaced))
-                    .offset(x: -100, y: -100)
+                    .offset(x: -50, y: -100)
                 
                 
                 
