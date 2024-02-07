@@ -51,6 +51,8 @@ struct ContentView: View {
                         .font(.system(size: 40, weight: .bold, design: .monospaced))
                     .offset(x: -75, y: -150)
                     
+                    Text("Project")
+                        .foregroundColor(.white)
                     
                 }
                 
