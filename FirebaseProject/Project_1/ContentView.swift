@@ -44,7 +44,8 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .bold, design: .monospaced))
                     .offset(x: -50, y: -100)
-                
+                Text("Firebase")
+                    .foregroundColor(.white)
                 
                 
                 TextField("Email" , text: $email)
