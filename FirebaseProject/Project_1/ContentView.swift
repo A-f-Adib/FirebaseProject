@@ -43,10 +43,16 @@ struct ContentView: View {
                 Text("Welcome to")
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .bold, design: .monospaced))
-                    .offset(x: -50, y: -100)
-                Text("Firebase")
-                    .foregroundColor(.white)
-                    .font(.system(size: 40, weight: .bold, design: .monospaced))
+                    .offset(x: -50, y: -150)
+                
+                HStack {
+                    Text("Firebase")
+                        .foregroundColor(.white)
+                        .font(.system(size: 40, weight: .bold, design: .monospaced))
+                    .offset(x: -75, y: -150)
+                    
+                    
+                }
                 
                 
                 TextField("Email" , text: $email)
