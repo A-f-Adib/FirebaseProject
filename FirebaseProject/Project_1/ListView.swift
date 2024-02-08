@@ -13,6 +13,8 @@ struct ListView: View {
             List {
                 Text("User 1")
             }
+            .navigationTitle("User Information")
+            .padding()
         }
     }
 }
