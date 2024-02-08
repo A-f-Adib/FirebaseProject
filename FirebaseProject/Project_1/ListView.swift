@@ -18,7 +18,10 @@ struct ListView: View {
                         .padding()
                     Text("User 3")
                         .padding()
-                    
+                    Text("User 4")
+                        .padding()
+                    Text("User 5")
+                        .padding()
                     
                         
                 }
