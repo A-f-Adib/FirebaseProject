@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ListView: View {
     var body: some View {
+        
         NavigationView {
+            
             List {
+                
                 ScrollView {
+                    
                     Text("User 1")
                         .padding()
                     Text("User 2")
@@ -25,10 +29,12 @@ struct ListView: View {
                     
                         
                 }
+                .font(.system(size: 20, weight: .bold, design: .monospaced))
             }
             .foregroundColor(.blue)
             .font(.title2)
             .navigationTitle("User Information")
+            
             .padding()
         }
     }
