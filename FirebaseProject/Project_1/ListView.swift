@@ -13,6 +13,13 @@ struct ListView: View {
             List {
                 ScrollView {
                     Text("User 1")
+                        .padding()
+                    Text("User 2")
+                        .padding()
+                    Text("User 3")
+                        .padding()
+                    
+                    
                         
                 }
             }
