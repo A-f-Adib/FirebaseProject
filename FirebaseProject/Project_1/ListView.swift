@@ -11,8 +11,13 @@ struct ListView: View {
     var body: some View {
         NavigationView {
             List {
-                Text("User 1")
+                ScrollView {
+                    Text("User 1")
+                        
+                }
             }
+            .foregroundColor(.blue)
+            .font(.title2)
             .navigationTitle("User Information")
             .padding()
         }
