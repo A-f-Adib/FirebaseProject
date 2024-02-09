@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var email = "Email"
+    @State private var pw = "pw"
     
     var body: some View {
         ZStack{
@@ -45,6 +46,7 @@ struct ContentView: View {
                     
                   TextField("Email", text: $email)
                         .offset(x: 0, y: 100)
+                    TextField("Password", text: $pw)
                 }
             }
             
