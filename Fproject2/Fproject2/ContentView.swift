@@ -42,15 +42,13 @@ struct ContentView: View {
                             .font(.title)
                             
                             .foregroundColor(.red)
+                        
                     }
-                   
-                    Circle()
-                        .frame(height:210)
-                        .foregroundColor(.white)
-                    Circle()
-                        .frame(height: 200)
-                    .foregroundColor(.yellow)
-                    
+                    Text("Project")
+                        .fontWeight(.bold)
+                        .font(.title)
+                    .foregroundColor(.blue)
+                    .offset(x: -28, y: 0)
                    
                 }
             }
