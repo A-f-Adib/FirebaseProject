@@ -44,7 +44,13 @@ struct ContentView: View {
                             .foregroundColor(.red)
                     }
                    
-                
+                    Circle()
+                        .frame(height:210)
+                        .foregroundColor(.white)
+                    Circle()
+                        .frame(height: 200)
+                    .foregroundColor(.yellow)
+                    
                    
                 }
             }
