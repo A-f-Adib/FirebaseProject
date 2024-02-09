@@ -43,10 +43,13 @@ struct ContentView: View {
                             
                             .foregroundColor(.red)
                     }
-                    
+                   
+                   
                   TextField("Email", text: $email)
-                        .offset(x: 0, y: 100)
+                        
                     TextField("Password", text: $pw)
+                        .foregroundColor(.white)
+                   
                 }
             }
             
