@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var email = "Email"
+    
     var body: some View {
         ZStack{
             Color.red
@@ -26,15 +29,22 @@ struct ContentView: View {
                     .frame(height: 200)
                 .foregroundColor(.yellow)
                 
-                HStack {
-                    Text("FireBase")
-                        .fontWeight(.bold)
-                        .font(.title)
-                    .foregroundColor(.blue)
-                    Image(systemName: "flame.fill")
-                        .font(.title)
-                        
-                        .foregroundColor(.red)
+               
+                
+                VStack{
+                    HStack {
+                        Text("FireBase")
+                            .fontWeight(.bold)
+                            .font(.title)
+                        .foregroundColor(.blue)
+                        Image(systemName: "flame.fill")
+                            .font(.title)
+                            
+                            .foregroundColor(.red)
+                    }
+                    
+                  TextField("Email", text: $email)
+                        .offset(x: 0, y: 100)
                 }
             }
             
