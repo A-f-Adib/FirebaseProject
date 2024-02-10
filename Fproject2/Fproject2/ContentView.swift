@@ -44,7 +44,7 @@ struct ContentView: View {
                             .foregroundColor(.red)
                         
                     }
-                    Text("Project")
+                   
                        
                         
                     
