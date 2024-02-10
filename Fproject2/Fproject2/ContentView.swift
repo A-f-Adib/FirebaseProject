@@ -31,9 +31,7 @@ struct ContentView: View {
                 .foregroundColor(.yellow)
                 
                
-                
-                VStack{
-                    HStack {
+                     HStack {
                         Text("FireBase")
                             .fontWeight(.bold)
                             .font(.title)
@@ -44,13 +42,7 @@ struct ContentView: View {
                             .foregroundColor(.red)
                         
                     }
-                   
-                       
-                        
-                    
-                    
-                   
-                }
+               
             }
             
         }.ignoresSafeArea()
