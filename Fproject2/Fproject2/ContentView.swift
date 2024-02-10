@@ -48,7 +48,7 @@ struct ContentView: View {
                         .fontWeight(.bold)
                         .font(.title)
                     .foregroundColor(.blue)
-                    .offset(x: -28, y: 0)
+                    
                    
                 }
             }
