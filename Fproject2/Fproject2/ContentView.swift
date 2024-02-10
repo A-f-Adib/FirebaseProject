@@ -46,7 +46,7 @@ struct ContentView: View {
                     }
                     Text("Project")
                         .fontWeight(.bold)
-                        .font(.title)
+                        
                     
                     
                    
