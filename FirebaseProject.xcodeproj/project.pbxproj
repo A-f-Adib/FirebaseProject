@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		741B82A52B791AB7000E2614 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741B82A42B791AB7000E2614 /* Car.swift */; };
+		741B82A72B791F47000E2614 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741B82A62B791F47000E2614 /* DataManager.swift */; };
 		7441F63B2B71A35A00B444C1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7441F63A2B71A35A00B444C1 /* FirebaseAuth */; };
 		7441F63D2B71A35A00B444C1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7441F63C2B71A35A00B444C1 /* FirebaseFirestore */; };
 		744A450E2B7297860022FF75 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744A450D2B7297860022FF75 /* ListView.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		741B82A42B791AB7000E2614 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		741B82A62B791F47000E2614 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		744A450D2B7297860022FF75 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		744B88562B6D421A00DFDFF8 /* FirebaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		744B88592B6D421A00DFDFF8 /* FirebaseProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseProjectApp.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				744B885B2B6D421A00DFDFF8 /* ContentView.swift */,
 				744A450D2B7297860022FF75 /* ListView.swift */,
 				741B82A42B791AB7000E2614 /* Car.swift */,
+				741B82A62B791F47000E2614 /* DataManager.swift */,
 				7494A0432B6EAC3F0083F292 /* GoogleService-Info.plist */,
 			);
 			path = Project_1;
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				744B885C2B6D421A00DFDFF8 /* ContentView.swift in Sources */,
+				741B82A72B791F47000E2614 /* DataManager.swift in Sources */,
 				744B885A2B6D421A00DFDFF8 /* FirebaseProjectApp.swift in Sources */,
 				741B82A52B791AB7000E2614 /* Car.swift in Sources */,
 				744A450E2B7297860022FF75 /* ListView.swift in Sources */,
