@@ -5,7 +5,7 @@
 //  Created by A.f. Adib on 2/11/24.
 //
 
-import Foundation
+import SwiftUI
 import Firebase
 
 class DataManager : ObservableObject {
