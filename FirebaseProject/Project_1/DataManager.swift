@@ -11,6 +11,10 @@ import Firebase
 class DataManager : ObservableObject {
     @Published var cars: [Car] = []
     
+    init() {
+        fetchCars()
+    }
+    
     func fetchCars() {
         cars.removeAll()
         let db = Firestore.firestore()

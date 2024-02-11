@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ListView: View {
+    
+    @EnvironmentObject var dataManager : DataManager
+    
     var body: some View {
         
         NavigationView {
@@ -17,22 +20,10 @@ struct ListView: View {
                 ScrollView {
                     
                     Text("User 1")
-                        .padding()
-                    Text("User 2")
-                        .padding()
-                    Text("User 3")
-                        .padding()
-                    Text("User 4")
-                        .padding()
-                    Text("User 5")
-                        .padding()
                     
                         
                 }
-                .font(.system(size: 20, weight: .bold, design: .monospaced))
             }
-            .foregroundColor(.blue)
-            .font(.title2)
             .navigationTitle("User Information")
             
             .padding()
