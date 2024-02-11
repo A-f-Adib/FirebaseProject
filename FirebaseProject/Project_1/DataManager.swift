@@ -20,6 +20,18 @@ class DataManager : ObservableObject {
                 print(error!.localizedDescription)
                 return
             }
+            
+            if let snapshot = snapshot {
+                for document in snapshot.documents {
+                    let data = document.data()
+                    
+                    let id = data["id"] as? String ?? ""
+                    let brand = data["brand"] as? String ?? ""
+                    
+                    let car = Car(id: id, brand: brand)
+                    self.cars.append(car)
+                }
+            }
         }
     }
 }
