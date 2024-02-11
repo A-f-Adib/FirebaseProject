@@ -15,16 +15,19 @@ struct ListView: View {
         
         NavigationView {
             
-            List {
+            List(dataManager.cars, id: \.id) {  car in
+                    
+                Text(car.brand)
                 
-                ScrollView {
-                    
-                    Text("User 1")
-                    
-                        
-                }
             }
-            .navigationTitle("User Information")
+            .navigationTitle("Cars")
+            .toolbar(content: {
+                Button {
+                    
+                } label: {
+                    Image(systemName: "plus")
+                }
+            })
             
             .padding()
         }
@@ -34,5 +37,6 @@ struct ListView: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
+            .environmentObject(DataManager())
     }
 }
