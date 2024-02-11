@@ -19,7 +19,9 @@ struct ContentView: View {
     
     var body: some View {
         
-        if userIsLoggedIn{
+        if userIsLoggedIn {
+             
+            ListView()
             
         } else {
             content
