@@ -14,12 +14,17 @@ struct NewCarView: View {
     
     var body: some View {
         VStack{
-            TextField("Cars", text: $newCar)
+            TextField("Enter Cars", text: $newCar)
             
             Button {
                 
             } label: {
                 Text("Save")
+                    .frame(width: 200, height: 40)
+                    .background(.blue)
+                    .cornerRadius(10)
+                    .foregroundColor(.white)
+                    .padding()
             }
         }
         .padding()
