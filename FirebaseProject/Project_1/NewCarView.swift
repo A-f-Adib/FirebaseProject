@@ -17,7 +17,7 @@ struct NewCarView: View {
             TextField("Enter Cars", text: $newCar)
             
             Button {
-                
+                dataManager.addCar(carBrand: newCar)
             } label: {
                 Text("Save")
                     .frame(width: 200, height: 40)
