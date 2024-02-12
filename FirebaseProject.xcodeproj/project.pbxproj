@@ -16,6 +16,7 @@
 		744B885C2B6D421A00DFDFF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744B885B2B6D421A00DFDFF8 /* ContentView.swift */; };
 		744B885E2B6D421C00DFDFF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744B885D2B6D421C00DFDFF8 /* Assets.xcassets */; };
 		744B88612B6D421C00DFDFF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744B88602B6D421C00DFDFF8 /* Preview Assets.xcassets */; };
+		748935D92B7A77B000152521 /* NewCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748935D82B7A77B000152521 /* NewCarView.swift */; };
 		7494A0442B6EAC3F0083F292 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7494A0432B6EAC3F0083F292 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		744B885B2B6D421A00DFDFF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		744B885D2B6D421C00DFDFF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		744B88602B6D421C00DFDFF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		748935D82B7A77B000152521 /* NewCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCarView.swift; sourceTree = "<group>"; };
 		7494A0432B6EAC3F0083F292 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 			children = (
 				744B885B2B6D421A00DFDFF8 /* ContentView.swift */,
 				744A450D2B7297860022FF75 /* ListView.swift */,
+				748935D82B7A77B000152521 /* NewCarView.swift */,
 				741B82A42B791AB7000E2614 /* Car.swift */,
 				741B82A62B791F47000E2614 /* DataManager.swift */,
 				7494A0432B6EAC3F0083F292 /* GoogleService-Info.plist */,
@@ -169,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748935D92B7A77B000152521 /* NewCarView.swift in Sources */,
 				744B885C2B6D421A00DFDFF8 /* ContentView.swift in Sources */,
 				741B82A72B791F47000E2614 /* DataManager.swift in Sources */,
 				744B885A2B6D421A00DFDFF8 /* FirebaseProjectApp.swift in Sources */,
