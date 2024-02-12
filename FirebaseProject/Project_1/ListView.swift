@@ -10,6 +10,7 @@ import SwiftUI
 struct ListView: View {
     
     @EnvironmentObject var dataManager : DataManager
+    @State private var showPopUp = false
     
     var body: some View {
         
@@ -23,12 +24,14 @@ struct ListView: View {
             .navigationTitle("Cars")
             .toolbar(content: {
                 Button {
-                    
+                    showPopUp.toggle()
                 } label: {
                     Image(systemName: "plus")
                 }
             })
-            
+            .sheet(isPresented: $showPopUp) {
+                NewCarView()
+            }
             .padding()
         }
     }
