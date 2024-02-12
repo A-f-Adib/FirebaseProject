@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct NewCarView: View {
+    
+    @EnvironmentObject var dataManager : DataManager
+    @State private var newCar = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TextField("Cars", text: $newCar)
+            
+            Button {
+                
+            } label: {
+                Text("Save")
+            }
+        }
+        .padding()
     }
 }
 
