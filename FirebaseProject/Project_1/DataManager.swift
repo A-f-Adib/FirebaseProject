@@ -38,4 +38,14 @@ class DataManager : ObservableObject {
             }
         }
     }
+    
+    func addCar (carBrand : String) {
+        let db = Firestore.firestore()
+        let ref = db.collection("Cars").document(carBrand)
+        ref.setData(["brand" : carBrand, "id": 10]) { error in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
