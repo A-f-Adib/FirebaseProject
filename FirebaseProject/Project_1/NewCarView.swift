@@ -14,7 +14,8 @@ struct NewCarView: View {
     
     var body: some View {
         ZStack {
-            Color.pink.opacity(0.4)
+            Color.pink.opacity(0.4).ignoresSafeArea()
+        
             VStack{
                 TextField("Enter Cars", text: $newCar)
                     .font(.title)
@@ -31,6 +32,7 @@ struct NewCarView: View {
                 }
             }
             .padding()
+            
         }
     }
 }
