@@ -17,8 +17,18 @@ struct NewCarView: View {
             Color.pink.opacity(0.4).ignoresSafeArea()
         
             VStack{
+                Spacer()
+                
                 Text("Enter the name of the cars")
                     .foregroundColor(.black)
+                    .font(.title.bold())
+                Rectangle()
+                    .frame(width: 350, height: 1)
+                    .foregroundColor(.black)
+                Spacer()
+                
+                
+                
                 
                 TextField("Enter", text: $newCar)
                     .font(.title.bold())
@@ -39,6 +49,9 @@ struct NewCarView: View {
                         .padding()
                 }
                 .padding(.top)
+                
+                Spacer()
+                Spacer()
             }
             .padding()
             
