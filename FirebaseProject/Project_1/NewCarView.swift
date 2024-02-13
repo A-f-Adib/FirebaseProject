@@ -17,11 +17,16 @@ struct NewCarView: View {
             Color.pink.opacity(0.4).ignoresSafeArea()
         
             VStack{
-                TextField("Enter Cars", text: $newCar)
+                Text("Enter the name of the cars")
+                    .foregroundColor(.black)
+                
+                TextField("Enter", text: $newCar)
                     .font(.title.bold())
                 
                 Button {
+                    
                     dataManager.addCar(carBrand: newCar)
+                    
                 } label: {
                     Text("Save")
                         .padding()
