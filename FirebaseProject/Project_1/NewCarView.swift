@@ -13,21 +13,25 @@ struct NewCarView: View {
     @State private var newCar = ""
     
     var body: some View {
-        VStack{
-            TextField("Enter Cars", text: $newCar)
-            
-            Button {
-                dataManager.addCar(carBrand: newCar)
-            } label: {
-                Text("Save")
-                    .frame(width: 200, height: 40)
-                    .background(.blue)
-                    .cornerRadius(10)
-                    .foregroundColor(.white)
-                    .padding()
+        ZStack {
+            Color.pink.opacity(0.4)
+            VStack{
+                TextField("Enter Cars", text: $newCar)
+                    .font(.title)
+                
+                Button {
+                    dataManager.addCar(carBrand: newCar)
+                } label: {
+                    Text("Save")
+                        .frame(width: 200, height: 40)
+                        .background(.blue)
+                        .cornerRadius(10)
+                        .foregroundColor(.white)
+                        .padding()
+                }
             }
+            .padding()
         }
-        .padding()
     }
 }
 
