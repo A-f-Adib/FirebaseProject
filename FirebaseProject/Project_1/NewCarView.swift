@@ -24,12 +24,15 @@ struct NewCarView: View {
                     dataManager.addCar(carBrand: newCar)
                 } label: {
                     Text("Save")
+                        .padding()
+                       
                         .frame(width: 200, height: 40)
-                        .background(.blue)
+                        .background(.pink.opacity(0.8))
                         .cornerRadius(10)
                         .foregroundColor(.white)
                         .padding()
                 }
+                .padding(.top)
             }
             .padding()
             
