@@ -18,15 +18,16 @@ struct NewCarView: View {
         
             VStack{
                 TextField("Enter Cars", text: $newCar)
-                    .font(.title)
+                    .font(.title.bold())
                 
                 Button {
                     dataManager.addCar(carBrand: newCar)
                 } label: {
                     Text("Save")
                         .padding()
-                       
-                        .frame(width: 200, height: 40)
+                        .font(.title2.bold())
+                        .padding()
+                        .frame(width: 200, height: 50)
                         .background(.pink.opacity(0.8))
                         .cornerRadius(10)
                         .foregroundColor(.white)
